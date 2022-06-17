@@ -13,7 +13,7 @@ const App = () => {
         <View style = {css.vw}>
             <View>
                   <Text style={css.poppop}>
-                     POP! POP!
+                     nak! nak!
                   </Text>
             </View>
             <KeyboardAvoidingView>
