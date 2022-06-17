@@ -12,7 +12,7 @@ const App = () => {
      <SafeAreaView style = {css.back}>
         <View style = {css.vw}>
            <Text style={css.poppop}>
-              POP POP
+              POP POP!!
            </Text>
            {/* <PreviewLayout label="flexDirection" value={["row"]}sselectedValue={flexDirection} setSelectedValue={setflexDirection}></PreviewLayout> */}
             <View style={css.testflex}>
