@@ -13,17 +13,19 @@ const styles = StyleSheet.create({
       backgroundColor:'#FFCC00',
    },
    vw:{//view
-      flex: 1,
+      flex: 3,
    },
    poppop: {
+      // flex:2,
       fontWeight: 'bold',
       fontSize:70,
       color:'white',
       marginTop:'30%',
-      textAlign :'center',//tex전용 가로
+      textAlign :'center',//text전용 가로
    },
    idpw:{
-      margin:100,
+      flex:2,
+      margin:10,
       padding:10,
    },
    tbox:{
@@ -40,8 +42,12 @@ const styles = StyleSheet.create({
      justifyContent: 'center',
    },
    logbtn:{
-      margin:100,
-      padding:20,
+      padding:'1%',//숫자커질수록 idpw와 멀어짐
+      flex: 2,
+      color: 'block',
+      alignItems: 'center',
+      // border : 'border-radious',
+      // justifyContent: 'space-between',
    },
    
 

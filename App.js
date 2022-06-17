@@ -1,22 +1,19 @@
 //react-native_modal-> code in notion
 //make login page
 import React from 'react';
-import { SafeAreaView, View, Text, Button, TextInput, KeyboardAvoidingView } from 'react-native';
+import { SafeAreaView, View, Text, Button, TextInput, KeyboardAvoidingView, Alert } from 'react-native';
 import css from './css/custom';
 
 const App = () => {
    const [value, onChangeText] = React.useState(null);
    
   return (
-   
      <SafeAreaView style = {css.back}>
-        <View style = {css.vw}>
-            <View>
+            <View style = {css.vw}>
                   <Text style={css.poppop}>
                      nak! nak!
                   </Text>
             </View>
-            <KeyboardAvoidingView>
                <View style={css.idpw}>
                      <View style={css.testflex}>
                         <Text>User ID</Text>
@@ -35,11 +32,13 @@ const App = () => {
                               keyboardType="default">
                         </TextInput>
                      </View>
-                     <Button title="Login" style={css.logbtn}/>
+                     
                </View>
-            </KeyboardAvoidingView>
-        </View>
-        
+               <View style={css.logbtn}>
+                     <Button title="Login" color = "#2c2c2c" 
+                        onPress={()=>Alert.alert("로그인버튼 클릭")} />
+                     {/* button의 경우 title은 필수이고 color은 블록스타일안먹힘 */}
+               </View>
      </SafeAreaView>
      
    
