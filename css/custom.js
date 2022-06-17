@@ -14,14 +14,17 @@ const styles = StyleSheet.create({
    },
    vw:{//view
       flex: 1,
-      //justifyContent: 'center',
    },
    poppop: {
       fontWeight: 'bold',
-      fontSize:80,
+      fontSize:70,
       color:'white',
       marginTop:'30%',
       textAlign :'center',//tex전용 가로
+   },
+   idpw:{
+      margin:100,
+      padding:10,
    },
    tbox:{
       height: 40,
@@ -31,9 +34,9 @@ const styles = StyleSheet.create({
       backgroundColor:'white'
    },
    testflex:{
-      flex:1,
       flexDirection: 'row',//가로로 나열
-      width:'100%',
+        alignItems: 'center',
+     justifyContent: 'center',
    },
    
 
