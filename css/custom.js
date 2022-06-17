@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
    },
    tbox:{
       height: 40,
+      width: 200,
       margin: 12,
       borderWidth: 1,
       padding: 10,
@@ -37,6 +38,10 @@ const styles = StyleSheet.create({
       flexDirection: 'row',//가로로 나열
         alignItems: 'center',
      justifyContent: 'center',
+   },
+   logbtn:{
+      margin:100,
+      padding:20,
    },
    
 
