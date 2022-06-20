@@ -1,7 +1,7 @@
 //react-native_modal-> code in notion
 //make login page
 import React from 'react';
-import { SafeAreaView, View, Text, Button, TextInput, KeyboardAvoidingView, Alert } from 'react-native';
+import { SafeAreaView, View, Text, Button, TextInput, Alert } from 'react-native';
 import css from './css/custom';
 
 const App = () => {
@@ -46,7 +46,7 @@ const App = () => {
                      {/* button의 경우 title은 필수이고 color은 블록스타일안먹힘 */}
                </View>
                <View style={css.owner}>
-                        <Text onPress={()=> {alert('가맹점주로 시작하기')}} style={css.unline}>가맹점주로 시작하기</Text>
+                        <Text onPress={()=> {alert('가맹점주로 시작하기')}} style={css.unline}>메인화면</Text>
                      </View>
             </View>
      </SafeAreaView>

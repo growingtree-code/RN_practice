@@ -10,7 +10,8 @@ const styles = StyleSheet.create({
    // },
    back:{
       flex: 1,
-      backgroundColor:'#FFCC00',
+      backgroundColor:'#6666FF',
+      //#FFCC00
    },
    naknak:{//view
       flex: 3,
