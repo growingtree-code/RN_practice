@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor:'#FFCC00',
    },
-   vw:{//view
+   naknak:{//view
       flex: 3,
    },
    poppop: {
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
       color:'white',
       marginTop:'30%',
       textAlign :'center',//text전용 가로
+      textDecorationLine : 'underline',
    },
    idpw:{
       flex:2,
@@ -40,14 +41,23 @@ const styles = StyleSheet.create({
       flexDirection: 'row',//가로로 나열
         alignItems: 'center',
      justifyContent: 'center',
+     //alignSelf: 'flex-start'
+   },
+   unline:{
+      textDecorationLine : 'underline',
    },
    logbtn:{
-      padding:'1%',//숫자커질수록 idpw와 멀어짐
       flex: 2,
       color: 'block',
       alignItems: 'center',
       // border : 'border-radious',
       // justifyContent: 'space-between',
+   },
+   owner:{
+      flex:1,
+        alignItems: 'center',
+     justifyContent: 'center',
+     paddingBottom: '10%',
    },
    
 
