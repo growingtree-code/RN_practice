@@ -1,12 +1,14 @@
 //react-native_modal-> code in notion
 //make login page
-import React from 'react';
+import React, {useState} from 'react';
 import { SafeAreaView, View, Text, Button, TextInput, } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import css from './css/custom';
 
 const App = () => {
-   const [value, onChangeText] = React.useState(null);
-   const [inputPw, setPassword] = React.useState(null);
+     const [email, setEmail] = useState('');
+     const [password, setPassword] = useState('');
+
   return (
      <SafeAreaView style = {css.back}>
             <View style = {css.naknak}>
@@ -17,22 +19,25 @@ const App = () => {
             <View style={{flex:5,}}>
                <View style={css.idpw}>
                      <View style={css.testflex}>
-                        <Text>User ID</Text>
-                        <TextInput style={css.tbox} onChangeText={onChangeText}
-                              value={value}
+                        {/* <Text>User ID</Text> */}
+                        <TextInput
+                              style={css.tbox}
+                              onChangeText={setEmail}
+                              value={email}
                               placeholder="user id"
                               keyboardType="email-address">
-                                 {/* input박스에 커서뒀을때 뜨는 키보드 종류설정code */}
                         </TextInput>
                      </View>
                      <View style={css.testflex}>
-                        <Text>User PW</Text>
-                        <TextInput style={css.tbox}
-                              // value={value1}
+                        {/* <Text>User PW</Text> */}
+                        <TextInput
+                              style={css.tbox}
+                              onChangeText={setPassword}
+                              value={password}
                               placeholder="user pw"
                               keyboardType="default"
                               secureTextEntry
-                              onChangeText={inputPw => setPassword(inputPw)}>
+                              >
                         </TextInput>
                      </View>
                      <View style={css.testflex}>
@@ -45,7 +50,9 @@ const App = () => {
                <View style={css.logbtn}>
                      <Button title="Login" color = "#2c2c2c" 
                         onPress={()=>onpres} />
-                     {/* button의 경우 title은 필수이고 color은 블록스타일안먹힘 */}
+                     <TouchableOpacity style={css.test}>
+                        <Text >test</Text>
+                     </TouchableOpacity>
                </View>
                <View style={css.owner}>
                         <Text onPress={()=> {alert('가맹점주로 시작하기')}} style={css.unline}>메인화면</Text>

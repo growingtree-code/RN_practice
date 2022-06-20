@@ -60,7 +60,15 @@ const styles = StyleSheet.create({
      justifyContent: 'center',
      paddingBottom: '10%',
    },
-   
+   test:{
+    //width: "80%",
+    borderRadius: 25,
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 40,
+    backgroundColor: "#FF1493",
+   },   
 
  })
 
