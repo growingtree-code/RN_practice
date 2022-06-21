@@ -1,9 +1,12 @@
 //react-native_modal-> code in notion
 //make login page
-import React, {useState} from 'react';
-import { SafeAreaView, View, Text, Button, TextInput, } from 'react-native';
+import React, {useState,Component} from 'react';
+import { Modal, SafeAreaView, View, Text, Button, TextInput,TouchableHighlight,StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import css from './css/custom';
+import modal_example from './modal_example';
+
+testModalVisible = false;
 
 const App = () => {
      const [email, setEmail] = useState('');
@@ -51,8 +54,9 @@ const App = () => {
                      <Button title="Login" color = "#2c2c2c" 
                         onPress={()=>onpres} />
                      <TouchableOpacity style={css.test}>
-                        <Text >test</Text>
+                        <Text >tests</Text>
                      </TouchableOpacity>
+                     <modal_example/>
                </View>
                <View style={css.owner}>
                         <Text onPress={()=> {alert('가맹점주로 시작하기')}} style={css.unline}>메인화면</Text>
